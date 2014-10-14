@@ -1,0 +1,30 @@
+var quiltdata = {
+  title: "Cambodia",
+  imageURL: "http://4.bp.blogspot.com/-i8XLQHCE0g8/TqklyOhIPSI/AAAAAAAACAg/f95LspaTma4/s1600/2-Mozilla-swag.jpg",
+  content: {
+    header: "What are you most proud of for 2011?",
+    item: "Localization - We made localization session at Barcamppp4 2011",
+    item: "We'll finish localizing Firefox and Thunderbird into Khmer"
+  },
+  content: {
+    header: "What is your biggest challenge?",
+    item: "There is no Mozilla Community yet in Cambodia",
+  },
+  content: {
+    header: "What is your big goal for 2012?",
+    item: "Provide a traning to staffs who work at the Ministry of Education on how to surf internet by using [khmer] Firefox",
+    item: "Start Mozilla Khmer Community",
+    item: "Recruit more poeple to help making the translation of all Mozilla Products faster"
+  },
+  content: {
+    header: "Where can we follow you?",
+    link: {
+      href: "http://www.facebook.com/mozilla.km",
+      title: "Mozilla Khmer on Facebook"
+    },
+    link: {
+      href: "https://plus.google.com/u/0/b/102067531410080939505/",
+      title: "Mozilla Khmer on Google+"
+    }
+  }
+}
