@@ -1,8 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans);
+
 html, body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   margin: 0 auto;
-  background: black;
   color: white;
+}
+
+body h1 {
+  margin: 0;
+  padding: 10px;
 }
 
 a {
@@ -10,7 +16,7 @@ a {
 }
 
 .quilt {
-  font-family: "Baskerville", Georgia, serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .quilt-square.blurred {
@@ -37,6 +43,7 @@ a {
 
 .quilt-square section {
   position: relative;
+  cursor: pointer;
 }
 
 .quilt-square section > img {
@@ -48,29 +55,32 @@ a {
 
 .quilt-square section > h1 {
   position: absolute;
-  top: 40px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 500;
   font-size: 30px;
-  font-family: 'League Gothic';
+  font-family: 'Fira Sans', sans-serif;
   text-transform: uppercase;
   font-weight: normal;
   margin: 0px;
   padding: 10px;
   line-height: 25px;
   background: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
+  width: 100%;
+  max-width: 108px;
+  text-decoration: none;
+  word-wrap: break-word;
+  word-break: break-all;
+  hyphens: auto;
 }
 
-.quilt-square section > h1:hover {
-  text-decoration: underline;
-}
-
-.quilt-square section > ul {
+/*.quilt-square section > ul {*/
+.quilt-square section > *:nth-child(n+3) {
   display: none;
 }
 
-.quilt-square.focused section > ul {
+/*.quilt-square.focused section > ul {*/
+.quilt-square.focused section > *:nth-child(n+3) {
   display: block;
   position: absolute;
   top: 0px;
@@ -109,7 +119,7 @@ a {
 .quilt-square section > ul > li > blockquote:first-child {
   margin-left: 0px;
   font-size: 20px;
-  font-family: 'League Gothic';
+  font-family: 'Fira Sans', sans-serif;
   text-transform: uppercase;
   padding-bottom: 10px;
   color: white;
@@ -130,7 +140,4 @@ a {
   display: none;
 }
 
-.quilt-square section > h1 {
-  top: 65px /* prevent header to cover everyones face on photo */
-}
 

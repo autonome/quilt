@@ -39,7 +39,8 @@ function maybeFixupSection(element, size) {
     if (img.length)
       maybeFixupImageDimensions(img[0], size);
     var isFocused = false;
-    $(element).find("> h1").click(function() {
+    //$(element).find("> h1").click(function() {
+    $(element).click(function() {
       isFocused = !isFocused;
       var action = isFocused ? 'addClass' : 'removeClass';
       $("div.quilt").children().each(function() {
@@ -111,7 +112,6 @@ function buildQuilt(div) {
 
 function fixupQuilt(quilt, squareSize) {  
   quilt.children().width(squareSize).height(squareSize);
-  quilt.width(squareSize * SQUARES_PER_SIDE);
 
   quilt.children().each(function() {
     var element = this.firstChild;
